@@ -1,5 +1,6 @@
 #  TASK:
-# The string is passed to the program as a command line argument. It may contain spaces, letters of the Latin alphabet in any case and numbers. 
+# The string is passed to the program as a command line argument. 
+#It may contain spaces, letters of the Latin alphabet in any case and numbers. 
 # "YES" if the resulting string is a palindrome, or "NO" - if not.
 
 import sys
