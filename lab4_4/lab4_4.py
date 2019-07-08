@@ -1,3 +1,9 @@
+# TASK:
+#  Two nonnegative numbers (0 <= number_1 <= number_2 <= 999999) - command line arguments.
+#  Finding the number of "dream tickets" whose numbers located between the number_1 to number_2 inclusive. 
+#  If the number in the interval is less than 6 digits, at its beginning zeros are added to the required number, 
+#   as is the case with the numbering of the tickets
+
 import sys
 number_1=int(sys.argv[1])
 number_2=int(sys.argv[2])
@@ -15,10 +21,6 @@ if 0<=number_1<=number_2<=999999:
     number_1=int(number_1)
     number_1+=1
 else:
- print ("Введений аргумент не задовольняє умову 0<=number_1<=number_2<=999999. Будь ласка, повторіть спробу")
+ print ("The entered argument does not satisfy the condition 0<=number_1<=number_2<=999999. Please try again")
 print ("Number of Dream tickets:", number_of_dream_tickets)
 print ("Dream tickets:", dream_ticket)
-
-# Два цілих невід'ємних числа (0<=number_1<=number_2<=999999) - аргументи командного рядка.
-# Пошук кількості "щасливих квитків", чиї номери лежать на проміжку від number_1 до number_2 включно. 
-#Якщо число на проміжку має менше 6 розрядів, вважати, що на його початку дописуються нулі у необхідній кількості, як це і відбувається при нумерації квитків. 

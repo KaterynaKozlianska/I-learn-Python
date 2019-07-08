@@ -1,12 +1,12 @@
 # Построение графика, гистограммы и диаграммы box plot 
 #на основе файла с данными о продажах и оценках видео-игр
 
-
+# Data load
 import pandas as pd 
 import numpy as np
 df=pd.read_csv("video_games_sales.csv")
-# Данные есть не для всех игр, поэтому оставляем только те записи, в которых нет пропусков
 print(df.info())
+# Данные есть не для всех игр, поэтому оставляем только те записи, в которых нет пропусков
 df = df.dropna() 
 print(df.info())
 # Некоторые признаки, которые pandas считал как object, явно приведем к типам float или int
@@ -25,12 +25,8 @@ print (sales_df)
 # Посчитаем суммарные продажи по годам
 sales_df=sales_df.groupby('Year_of_Release').sum() 
 print (sales_df)
+
 # Построим график
-sales_df.plot() 
-# Построим гистограмму, rot - угол наклона подписей
-sales_df.plot(kind='bar', rot=45) 
-
-
 # Перед началом работы c библиотекой Plotly импортируем все необходимые модули
 from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
 import plotly
