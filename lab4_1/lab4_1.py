@@ -1,3 +1,7 @@
+#  TASK:
+# The string is passed to the program as a command line argument. It may contain spaces, letters of the Latin alphabet in any case and numbers. 
+# "YES" if the resulting string is a palindrome, or "NO" - if not.
+
 import sys
 x=str(sys.argv[1:])
 flag=True
@@ -10,6 +14,3 @@ if flag:
  print ('YES')
 else:
  print ('NO')
-
-# Рядок, передається в програму як аргумент командного рядка. Може містити пробіли, літери латинського алфавіту в будь-якому регістрі та цифри. 
-# Рядок "YES", якщо отриманий рядок є паліндромом, або "NO" - якщо ні. 

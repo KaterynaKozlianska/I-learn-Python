@@ -1,24 +1,24 @@
 import sys
-a1=int(sys.argv[1])
-a2=int(sys.argv[2])
-z=0
-q=0
-if 0<=a1<=a2<=999999:
-  while a1<=a2:
-    a1=str(a1)
-    a1=a1.zfill(6)
-    x=int(a1[0])+int(a1[1])+int(a1[2])
-    y=int(a1[3])+int(a1[4])+int(a1[5])
+number_1=int(sys.argv[1])
+number_2=int(sys.argv[2])
+number_of_dream_tickets=0
+dream_ticket=[]
+if 0<=number_1<=number_2<=999999:
+  while number_1<=number_2:
+    number_1=str(number_1)
+    number_1=number_1.zfill(6)
+    x=int(number_1[0])+int(number_1[1])+int(number_1[2])
+    y=int(number_1[3])+int(number_1[4])+int(number_1[5])
     if x==y:
-      z+=1
-      q=(a1)
-      print ("Щасливий квиток:", q)
-    a1=int(a1)
-    a1+=1
+      number_of_dream_tickets+=1
+      dream_ticket.append(number_1)
+    number_1=int(number_1)
+    number_1+=1
 else:
- print ("Введений аргумент не задовольняє умову 0<=a1<=a2<=999999. Будь ласка, повторіть спробу")
-print ("Кількість щасливих квитків:", z)
-print ("Щасливий квиток:", q)
+ print ("Введений аргумент не задовольняє умову 0<=number_1<=number_2<=999999. Будь ласка, повторіть спробу")
+print ("Number of Dream tickets:", number_of_dream_tickets)
+print ("Dream tickets:", dream_ticket)
 
-# Два цілих невід'ємних числа (0<=a1<=a2<=999999) - аргументи командного рядка.
-# Пошук кількості "щасливих квитків", чиї номери лежать на проміжку від a1 до a2 включно. Якщо число на проміжку має менше 6 розрядів, вважати, що на його початку дописуються нулі у необхідній кількості, як це і відбувається при нумерації квитків. Виводити номери квитків не треба.
+# Два цілих невід'ємних числа (0<=number_1<=number_2<=999999) - аргументи командного рядка.
+# Пошук кількості "щасливих квитків", чиї номери лежать на проміжку від number_1 до number_2 включно. 
+#Якщо число на проміжку має менше 6 розрядів, вважати, що на його початку дописуються нулі у необхідній кількості, як це і відбувається при нумерації квитків. 
