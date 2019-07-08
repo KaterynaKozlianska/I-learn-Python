@@ -1,3 +1,8 @@
+#  TASK
+# String consisting of opening and closing parentheses is a command line argument.
+# YES "if the input line contains the correct parenthesis, or" NO "if the sequence is incorrect. 
+#The parenthesis is correct if all the brackets can be broken in pairs" opening "-" closing ", with in each pair the closing bracket follows after the opening
+
 import sys
 x=str("(")
 y=str(")")
@@ -23,6 +28,3 @@ if flag:
  print ("YES")
 else:
  print ("NO")
-
- #Рядок, що складається з відкриваючих та закриваючих круглих дужок - аргумент командного рядка. Для передачі в якості рядка послідовність береться в подвійні лапки
- #Рядок "YES", якщо вхідний рядок містить правильну дужкову послідовність; або рядок "NO", якщо послідовність є неправильною. Дужкова послідовність вважається правильною, якщо всі дужки можна розбити попарно "відкриваюча"-"закриваюча", при чому в кожній парі закриваюча дужка слідує після відкриваючої
