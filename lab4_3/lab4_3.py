@@ -1,7 +1,7 @@
-# TASK
-#  String consisting of opening and closing parentheses is a command line argument.
-#  YES "if the input line contains the correct parenthesis, or" NO "if the sequence is incorrect. 
-#   The parenthesis is correct if all the brackets can be broken in pairs "opening" - "closing", with in each pair the closing bracket follows after the opening
+# TASK:
+#  String consisting of opening and closing bracket is a command line argument.
+#  YES "if the input line contains the correct bracket, or" NO "if the sequence is incorrect. 
+#   The bracket is correct if all the brackets can be broken in pairs "opening" - "closing", with in each pair the closing bracket follows after the opening
 
 import sys
 opening=str("(")

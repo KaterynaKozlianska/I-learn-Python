@@ -1,4 +1,4 @@
-# TASK
+# TASK:
 #  Nonzero number of values ​​- command line arguments. 
 #   Values-arguments can be numbers or strings that consist of numbers and letters of the Latin alphabet without spaces.
 #  The row consists of the values obtained in reverse order with spaces

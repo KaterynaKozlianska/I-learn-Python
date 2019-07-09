@@ -22,7 +22,9 @@ category=[]
 category_index=[]
 for index, row in useful_col.iterrows():
     print (row[0])
+    print()
     category.append(input("Set the category:"))
+    print()
     category_index.append(row.name)
     useful_col['Category']=pd.Series(category, index=category_index)
 print (useful_col.head())
@@ -41,7 +43,7 @@ category_share=useful_col.pivot_table(
 category_share.columns=category_share.columns.droplevel(level=0)
 category_share=category_share.sort_values(by='All', ascending=False)
 print (category_share)
-category_share=round(category_share/(category_share.All.sum()/2)*100,2)
+category_share=round(category_share/(category_share.All.sum()/2)*100,1)
 print (category_share)
 
 
