@@ -5,8 +5,10 @@
 
 import sys
 x=str(sys.argv[1:])
+print (x)
 flag=True
 x_cleaned=x.lower().replace(" ","").replace("'","").replace(",","").replace("[","").replace("]","")
+print (x_cleaned)
 x_length =len(x_cleaned)
 for i in range(x_length//2):
  if x_cleaned[i]!=x_cleaned[(x_length-1)-i]:
